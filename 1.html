@@ -1,0 +1,158 @@
+
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quay Lô Tô ngẫu nhiên- Toàn Thiện</title>
+    <link rel="icon" href="/public/image/signage_2X.png">
+    <link href="/public/lib/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+    <link href="/public/css/loto.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <img style="position:absolute;margin:1% 0 0 80%; width:10%;" src="./lib/10082-smiling-face-with-halo-icon.png" /> -->
+    <div>
+        <div style="float: left;text-align: center;min-width: 65%;max-width: 65%;">
+            <img src="/public/image/signage_2X.png" style="width: 10%;height: 10%;float: left;">
+            <h2 style="color:blue">
+                Thiện Style Lô Tô. Chơi lô tô không cần bốc số. Không lo gian lận
+            </h2>
+            <button class="btnQuay" style="background-color:greenyellow" id="Quay" tabindex="3">Quay tiếp</button>
+            <button class="btnQuay" style="background-color:lightpink" id="reset" tabindex="4">Ván mới</button>
+            <div style="clear: both;"></div>
+            <table class="tableResult">
+                <tr>
+                    <th name="01">01</th>
+                    <th name="11">11</th>
+                    <th name="21">21</th>
+                    <th name="31">31</th>
+                    <th name="41">41</th>
+                    <th name="51">51</th>
+                    <th name="61">61</th>
+                    <th name="71">71</th>
+                    <th name="81">81</th>
+                </tr>
+                <tr>
+                    <th name="02">02</th>
+                    <th name="12">12</th>
+                    <th name="22">22</th>
+                    <th name="32">32</th>
+                    <th name="42">42</th>
+                    <th name="52">52</th>
+                    <th name="62">62</th>
+                    <th name="72">72</th>
+                    <th name="82">82</th>
+                </tr>
+                <tr>
+                    <th name="03">03</th>
+                    <th name="13">13</th>
+                    <th name="23">23</th>
+                    <th name="33">33</th>
+                    <th name="43">43</th>
+                    <th name="53">53</th>
+                    <th name="63">63</th>
+                    <th name="73">73</th>
+                    <th name="83">83</th>
+                </tr>
+                <tr>
+                    <th name="04">04</th>
+                    <th name="14">14</th>
+                    <th name="24">24</th>
+                    <th name="34">34</th>
+                    <th name="44">44</th>
+                    <th name="54">54</th>
+                    <th name="64">64</th>
+                    <th name="74">74</th>
+                    <th name="84">84</th>
+                </tr>
+                <tr>
+                    <th name="05">05</th>
+                    <th name="15">15</th>
+                    <th name="25">25</th>
+                    <th name="35">35</th>
+                    <th name="45">45</th>
+                    <th name="55">55</th>
+                    <th name="65">65</th>
+                    <th name="75">75</th>
+                    <th name="85">85</th>
+                </tr>
+                <tr>
+                    <th name="06">06</th>
+                    <th name="16">16</th>
+                    <th name="26">26</th>
+                    <th name="36">36</th>
+                    <th name="46">46</th>
+                    <th name="56">56</th>
+                    <th name="66">66</th>
+                    <th name="76">76</th>
+                    <th name="86">86</th>
+                </tr>
+                <tr>
+                    <th name="07">07</th>
+                    <th name="17">17</th>
+                    <th name="27">27</th>
+                    <th name="37">37</th>
+                    <th name="47">47</th>
+                    <th name="57">57</th>
+                    <th name="67">67</th>
+                    <th name="77">77</th>
+                    <th name="87">87</th>
+                </tr>
+                <tr>
+                    <th name="08">08</th>
+                    <th name="18">18</th>
+                    <th name="28">28</th>
+                    <th name="38">38</th>
+                    <th name="48">48</th>
+                    <th name="58">58</th>
+                    <th name="68">68</th>
+                    <th name="78">78</th>
+                    <th name="88">88</th>
+                </tr>
+                <tr>
+                    <th name="09">09</th>
+                    <th name="19">19</th>
+                    <th name="29">29</th>
+                    <th name="39">39</th>
+                    <th name="49">49</th>
+                    <th name="59">59</th>
+                    <th name="69">69</th>
+                    <th name="79">79</th>
+                    <th name="89">89</th>
+                </tr>
+                <tr>
+                    <th name="10">10</th>
+                    <th name="20">20</th>
+                    <th name="30">30</th>
+                    <th name="40">40</th>
+                    <th name="50">50</th>
+                    <th name="60">60</th>
+                    <th name="70">70</th>
+                    <th name="80">80</th>
+                    <th name="90">90</th>
+                </tr>
+            </table>
+            <div class="div-left">
+
+            </div>
+        </div>
+        <div style="float: right;min-width: 30%;">
+            <button style="padding: 2%;margin: 5%;margin-top: 20%; float: right;" class="Button-Quay" id="HienThi">00</button>
+        </div>
+        <div style="clear:both"></div>
+
+        <!-- <div id="div-center" style="float:left;width:0.5%;min-height:10vh;background-color:red;margin:0 1% 0 0">
+            &nbsp;
+        </div>
+        <div class="div-right">
+            &nbsp;
+        </div> -->
+    </div>
+
+    <script src="/public/lib/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+    <script src="/public/lib/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <script src="/public/js/loto.js"></script>
+</body>
+
+</html>
